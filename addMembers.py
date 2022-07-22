@@ -130,8 +130,6 @@ class AddMembers:
                 client["client"].disconnect()
                 self.clients.pop(client["id"])
                 print(f"[*] No .of remaining clients {len(self.clients)}\n")
-                # print('shit')
-                # print(f'[*] No .of remaining clients {len(self.clients)}\n')
 
             except Exception as e:
                 print(f"[-][{i}] ", e)
