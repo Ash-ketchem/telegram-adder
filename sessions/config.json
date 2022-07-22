@@ -1,7 +1,7 @@
 [
 	{
 		"name" : "name",
-		"phone": "numbver",
+		"phone": "number",
 		"app_id":"id number",
 		"app_hash":"hash"
 	}
