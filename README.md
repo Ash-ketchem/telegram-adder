@@ -19,6 +19,7 @@ TO SCRAPE GROUPS OR CHANNELS :
 TO ADD MEMBERS TO A GROUP OR CHANNEL:
 
     To add Telegram accounts to the client pool, edit the config.json in the sessions folder with the required account details
-    a demo is given
+    
+    a demo is avialable in sessions folder
 
     # python3 addMembers.py
