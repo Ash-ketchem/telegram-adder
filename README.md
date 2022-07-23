@@ -11,6 +11,10 @@ It follows a round-robin pattern by using random clients from the pool of client
 USAGE
 -------
 
+pip install -r requirements.txt
+
+
+
 TO SCRAPE GROUPS OR CHANNELS :
 
     # python3 teleScrapper.py
