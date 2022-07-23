@@ -73,7 +73,7 @@ class AddMembers:
 
         target = int(
             input(
-                "[*] Please enter the index number of the group/channel you want to add members to :"
+                "\n[*] Please enter the index number of the group/channel you want to add members to :"
             )
         )
         target_entity = InputPeerChannel(
