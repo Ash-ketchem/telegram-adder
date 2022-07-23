@@ -21,7 +21,7 @@ class AddMembers:
         self.clients = self.client_int.initClients()
         self.groups = []
         self.members_to_add = []
-        self.max_memebers_to_add = 1000
+        # self.max_members_to_add = 200 # maximum members to add to a group / channel
         self.round_robin = True
 
     def addMembers(self):
