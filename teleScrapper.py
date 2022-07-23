@@ -70,7 +70,7 @@ class Scrapper:
                             target_grp,
                             ChannelParticipantsSearch(""),
                             offset,
-                            min(limit, limit - offset),
+                            min(self.members_from_group_limit-offset, limit),
                             hash=0,
                         )
                     )
@@ -109,11 +109,11 @@ class Scrapper:
                     else:
                         with open("members.json", "w") as f:
                             f.write(json.dumps(users, indent=4))
+                            
+                    if offset >= self.members_from_group_limit and not self.aggressive:
+                        break
 
                 print("[+] successfully scraped group members")
-
-                if offset >= self.members_from_group_limit and not self.aggressive:
-                    break
 
             except Exception as e:
                 print(e, "- getMembers method")
